@@ -142,6 +142,13 @@ export class BallChasingAPI {
         }
     }
 
+    /**
+     * Upload a replay
+     *
+     * @param filepath
+     * @param groupId
+     * @param visibility
+     */
     async uploadReplay(filepath: string, groupId?: string, visibility?: Visibility) {
         try {
             const endpoint = new URL("/api/v2/upload", this._baseURL);
