@@ -1,7 +1,7 @@
 {
   "name": "ballchasing",
   "description": "Provides a wrapper around the ballchasing.com API",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "author": "devnoot <devnoot@gmail.com>",
   "license": "MIT",
