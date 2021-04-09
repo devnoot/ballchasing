@@ -1,10 +1,11 @@
 {
   "name": "ballchasing",
   "description": "Provides a wrapper around the ballchasing.com API",
-  "version": "0.0.3",
-  "main": "dist/index.js",
+  "version": "0.0.4",
   "author": "devnoot <devnoot@gmail.com>",
   "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/ballchasing.js",
   "devDependencies": {
     "@types/chai": "^4.2.16",
     "@types/dotenv": "^8.2.0",
@@ -13,6 +14,7 @@
     "bottleneck": "^2.19.5",
     "chai": "^4.3.4",
     "dotenv": "^8.2.0",
+    "microbundle": "^0.13.0",
     "mocha": "^8.3.2",
     "nodemon": "^2.0.7",
     "ts-loader": "^8.1.0",
@@ -21,11 +23,10 @@
   },
   "scripts": {
     "tsc": "tsc -p tsconfig.json",
-    "build": "yarn tsc",
+    "build": "microbundle",
     "start": "node dist/index.js",
     "prestart": "yarn build",
-    "test": "mocha --timeout 15000",
-    "dev": "nodemon dist/index.js"
+    "test": "mocha --timeout 15000"
   },
   "dependencies": {
     "node-fetch": "^2.6.1"
