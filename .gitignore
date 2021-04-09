@@ -1,6 +1,8 @@
 local/
 replays/
 .idea/
+src/endpoints.ts
+dist/endpoints.js
 
 # Logs
 logs
