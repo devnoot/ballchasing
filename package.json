@@ -5,6 +5,10 @@
   "author": "devnoot <devnoot@gmail.com>",
   "main": "dist/ballchasing.js",
   "types": "src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devnoot/ballchasing"
+  },
   "devDependencies": {
     "@types/chai": "^4.2.16",
     "@types/dotenv": "^8.2.0",

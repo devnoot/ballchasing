@@ -9,5 +9,11 @@ export {
     PatchReplayArgs,
     GetReplayArgs,
     ListGroupsArgs,
-    PatchGroupArgs
+    PatchGroupArgs,
+    Rank,
+    SortBy,
+    SortDir,
+    Visibility,
+    Playlist,
+    MatchResult
 } from "./BallChasingAPI"
