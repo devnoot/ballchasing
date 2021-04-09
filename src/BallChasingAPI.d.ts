@@ -1,5 +1,9 @@
-import { Response } from "node-fetch";
-import { MatchResult, Playlist, Rank, SortBy, SortDir, Visibility } from "./types";
+export declare type Visibility = "public" | "unlisted" | "private";
+export declare type Playlist = "unranked-duels" | "unranked-doubles" | "unranked-standard" | "unranked-chaos" | "private" | "season" | "offline" | "ranked-duels" | "ranked-doubles" | "ranked-solo-standard" | "ranked-standard" | "snowday" | "rocketlabs" | "hoops" | "rumble" | "tournament" | "dropshot" | "ranked-hoops" | "ranked-rumble" | "ranked-dropshot" | "ranked-snowday" | "dropshot-rumble" | "heatseeker";
+export declare type MatchResult = "win" | "loss";
+export declare type Rank = "unranked" | "bronze-1" | "bronze-2" | "bronze-3" | "silver-1" | "silver-2" | "silver-3" | "gold-1" | "gold-2" | "gold-3" | "platinum-1" | "platinum-2" | "platinum-3" | "diamond-1" | "diamond-2" | "diamond-3" | "champion-1" | "champion-2" | "champion-3" | "grand-champion";
+export declare type SortBy = "replay-date" | "upload-date";
+export declare type SortDir = "asc" | "desc";
 export interface ListReplaysArgs {
     title?: string;
     playerName?: string;
@@ -89,7 +93,7 @@ export declare class BallChasingAPI {
      * 2) If ballchasing API is reachable
      */
     ping(): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
     /**
@@ -100,48 +104,48 @@ export declare class BallChasingAPI {
      * @param visibility
      */
     uploadReplay(filepath: string, groupId?: string, visibility?: Visibility): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
     getMaps(): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
     listReplays(args: ListReplaysArgs): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
     getReplay(args: GetReplayArgs): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
     patchReplay({ id, patch }: PatchReplayArgs): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
     deleteReplay(args: DeleteReplayArgs): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
-    downloadReplay(args: DownloadReplayArgs): Promise<Response>;
+    downloadReplay(args: DownloadReplayArgs): Promise<import("node-fetch").Response>;
     createGroup(args: CreateGroupArgs): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
     listGroups(args?: ListGroupsArgs): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
     getGroup(args: GetGroupArgs): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
     deleteGroup(args: DeleteGroupArgs): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
     patchGroup({ id, patch }: PatchGroupArgs): Promise<{
-        response: Response;
+        response: import("node-fetch").Response;
         data: any;
     }>;
 }
