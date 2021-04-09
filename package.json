@@ -12,6 +12,7 @@
     "@types/node-fetch": "^2.5.8",
     "bottleneck": "^2.19.5",
     "chai": "^4.3.4",
+    "dotenv": "^8.2.0",
     "mocha": "^8.3.2",
     "nodemon": "^2.0.7",
     "ts-loader": "^8.1.0",
@@ -27,7 +28,6 @@
     "dev": "nodemon dist/index.js"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
     "node-fetch": "^2.6.1"
   },
   "files": [
