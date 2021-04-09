@@ -14,7 +14,7 @@ yarn add ballchasing
 ## Quick Start 
 
 ```typescript
-import {BallChasingAPI} from "ballchasing";
+const {BallChasingAPI} = require("ballchasing");
 
 const bc = new BallChasingAPI("your-api-key-here");
 
