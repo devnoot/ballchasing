@@ -42,3 +42,6 @@ const bc = new BallChasingAPI("your-api-key-here");
 })();
 
 ```
+
+## Documentation
+[https://devnoot.github.io/ballchasing/]()

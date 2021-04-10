@@ -29,11 +29,15 @@
     "build": "microbundle -i src/index.ts -o dist/ballchasing.js --no-pkg-main --target node",
     "start": "node dist/index.js",
     "prestart": "yarn build",
-    "test": "mocha --timeout 15000"
+    "test": "mocha --timeout 15000",
+    "docs": "typedoc --out docs src/index.ts",
+    "deploy:docs": "gh-pages -d docs"
   },
   "dependencies": {
     "form-data": "^3.0.1",
-    "node-fetch": "^2.6.1"
+    "gh-pages": "^3.1.0",
+    "node-fetch": "^2.6.1",
+    "typedoc": "^0.20.35"
   },
   "files": [
     "dist/"
